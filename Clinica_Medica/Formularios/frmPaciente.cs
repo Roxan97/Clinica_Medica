@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Clinica_Medica
 {
-    public partial class frmPrincipal : Form
+    public partial class frmPaciente : Form
     {
         DataTable pacientes = new DataTable();
-        public frmPrincipal()
+        public frmPaciente()
         {
             InitializeComponent();
             this.KeyPreview = true;
@@ -187,6 +187,11 @@ namespace Clinica_Medica
                 e.SuppressKeyPress = true;
                 SelectNextControl(this.ActiveControl, true, true, true, true);
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
