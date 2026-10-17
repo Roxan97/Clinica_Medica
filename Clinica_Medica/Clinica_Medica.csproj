@@ -197,6 +197,12 @@
     <Compile Include="Formularios\frmConsulta.Designer.cs">
       <DependentUpon>frmConsulta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmDoctor.Designer.cs">
+      <DependentUpon>frmDoctor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,6 +215,7 @@
     <Compile Include="Formularios\frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modelos\Doctores.cs" />
     <Compile Include="Modelos\Especialidades.cs" />
     <Compile Include="Modelos\Generos.cs" />
     <Compile Include="Modelos\Pacientes.cs" />
@@ -217,6 +224,9 @@
     <Compile Include="Repositorios\RepositorioGenerico.cs" />
     <EmbeddedResource Include="Formularios\frmConsulta.resx">
       <DependentUpon>frmConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmDoctor.resx">
+      <DependentUpon>frmDoctor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmPaciente.resx">
       <DependentUpon>frmPaciente.cs</DependentUpon>

@@ -41,9 +41,6 @@ namespace Clinica_Medica
             cmbGenero.DropDownStyle =
                 ComboBoxStyle.DropDownList;
 
-            cmbEspecialidad.DropDownStyle =
-                ComboBoxStyle.DropDownList;
-
             dataPacientes.AllowUserToAddRows = false;
             dataPacientes.ReadOnly = true;
             dataPacientes.SelectionMode =
@@ -68,7 +65,7 @@ namespace Clinica_Medica
             try
             {
                 await CargarGenerosAsync();
-                await CargarEspecialidadesAsync();
+               
                 await CargarPacientesAsync();
 
                 LimpiarCampos();
@@ -102,7 +99,7 @@ namespace Clinica_Medica
         // CARGAR ESPECIALIDADES ACTIVAS
         // ==========================================
 
-        private async Task CargarEspecialidadesAsync()
+       /* private async Task CargarEspecialidadesAsync()
         {
             var especialidades =
                 await _especialidadRepo.ObtenerTodosAsync();
@@ -115,7 +112,7 @@ namespace Clinica_Medica
             cmbEspecialidad.DisplayMember = "Nombre";
             cmbEspecialidad.ValueMember = "IdEspecialidad";
             cmbEspecialidad.SelectedIndex = -1;
-        }
+        }*/
 
         // ==========================================
         // CARGAR PACIENTES ACTIVOS
